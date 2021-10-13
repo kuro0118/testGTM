@@ -4,10 +4,10 @@
   "description": "test gtm",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node app.js",
-    "debug": "node app.js",
-    "start": "node app.js"
+    "debug": "node app.js"
   },
   "author": "",
   "license": "ISC"
