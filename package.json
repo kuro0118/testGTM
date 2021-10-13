@@ -1,0 +1,16 @@
+{
+  "name": "test-gtm",
+  "version": "1.0.0",
+  "description": "test gtm",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "views": "^1.0.2"
+  }
+}
