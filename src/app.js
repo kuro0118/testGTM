@@ -1,5 +1,6 @@
 /* 1. expressモジュールをロードし、インスタンス化してappに代入。*/
 var express = require("express");
+var path = require('path');
 var app = express();
 const PORT = process.env.PORT || 1234;
 
@@ -10,6 +11,8 @@ var server = app.listen(PORT, function(){
 
 // View EngineにEJSを指定。
 app.set('view engine', 'ejs');
+
+app.set('views', path.join(__dirname, 'views'));
 
 // "/"へのGETリクエストでindex.ejsを表示する。拡張子（.ejs）は省略されていることに注意。
 app.get("/", function(req, res, next){
